@@ -28,6 +28,7 @@ namespace TofArSlamViewr
                     this.lineRenderer.positionCount = this.points.Count;
                     this.lineRenderer.SetPositions(this.points.ToArray());
                 }
+                lastPosition = this.targetTransform.position;
                 yield return null;
             }
         }
